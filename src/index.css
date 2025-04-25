@@ -1,13 +1,93 @@
 body {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #e3f2fdd1, #b5ced6);
+  min-height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todo {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.todo h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #3eb0ed;
+}
+
+.input {
+  margin-bottom: 2rem;
+}
+
+.input form {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.input input[type="text"] {
+  padding: 0.3rem;
+  border: 2px solid #90e2f9;
+  border-radius: 10px;
+  width: 60%;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.submit {
+  background-color: #159bc0;
+  color: rgb(222, 232, 235);
+  padding: 0.8rem 3.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #0d48a1a8;
+}
+
+.table {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.table thead {
+  background-color: #a5d7fb;
+}
+
+.table th, .table td {
+  padding: 1.1rem;
+  text-align: left;
+  border-bottom: 3px solid #ddd;
+}
+
+.table tr:hover {
+  background-color: #99cbf2;
+}
+
+.completed td {
+  text-decoration: line-through;
+  color: #f92323;
+  opacity: 0.5;
+}
+
+.task {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
 }
